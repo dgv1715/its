@@ -4,47 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title> Termine </title>
   </head>
 
   <header>
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="Fächer.html">Fächer</a>
-      <a href="Bibliothek.html">Bibliothek </a>
-      <a href="Termine.html">Wichtige Termine </a>
-
-
-    </div>
+        <a href="index.html" id="home"><i class="material-icons" style="font-size:80px;">home</i></a>
+        <a href="Fächer.html" id="subjects"><i class="material-icons" style="font-size:80px;">library_books</i></a>
+        <a href="Bibliothek.html" id="bib"><i class="material-icons" style="font-size:80px;">import_contacts</i></a>
+        <a href="Termine.html" id="calendar"><i class="material-icons" style="font-size:80px;">today</i></a>
+      </div>
   </header>
 
   <body>
-    <div class="container">
+    <div class="title">
       <h1>Wichtige Termine</h1>
-      
-      
-      
-    
-      <p id  = Willkommen>
-        Unsere wichtigsten Termine:
-   
-      </p>
-      
-      
-
-    <script
-      src="https://unpkg.com/react@16/umd/react.production.min.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-   
-    
-
-   
+      </div>
+<!-- calendar adpoted by https://www.sliderrevolution.com/resources/html-calendar/-->
+      <div class="container">
+        <div class="calendar">
+          <div class="front">
+            <div class="current-date">
+              <h1>Februar 2022</h1> 
+            </div>
+  
+            <div class="current-month">
+              <ul class="week-days">
+                <li>MON</li>
+                <li>DI</li>
+                <li>MI</li>
+                <li>DO</li>
+                <li>FR</li>
+                <li>SA</li>
+                <li>SO</li>
+              </ul>
+  
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">27</span>
+                  <span class="last-month">28</span>
+                  <span class="last-month">29</span>
+                  <span class="last-month">30</span>
+                  <span class="last-month">30</span>
+                  <span>01</span>
+                  <span>02</span>
+                </div>
+  
+                <div class="second">
+                  <span>03</span>
+                  <span>04</span>
+                  <!--class="event"-->
+                  <span>05</span>
+                  <span>06</span>
+                  <span>07</span>
+                  <span>08</span>
+                  <span>9</span>
+                </div>
+  
+                <div class="third">
+                  <span>10</span>
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span class="active">14</span>
+                  <span>15</span>
+                  <span>16</span>
+                </div>
+  
+                <div class="fourth">
+                  <span>17</span>
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                </div>
+  
+                <div class="fifth">
+                  <span>24</span>
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                  <span>28</span>
+                  <span class="last-month">1</span>
+                  <span class="last-month">2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="back">
+            <div class="info">
+              <div class="observations">
+                <p>
+                  Veranstaltung: <span>Schulfeier</span>
+                </p>
+              </div>
+              <div class="date">
+                <p class="info-date">
+                Datum: <span>14.02.2022</span>
+                </p>
+                <p class="info-time">
+                  Uhrzeit: <span>10:00</span>
+                </p>
+              </div>
+              <div class="address">
+                <p>
+                  Wo? <span>Vor der Aula</span>
+                </p>
+              </div>
+             
+            </div>
+  
+            <div class="actions">
+              <button class="save">
+                Save <i class="ion-checkmark"></i>
+              </button>
+              <button class="dismiss">
+                Dismiss <i class="ion-android-close"></i>
+              </button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="termine.js"></script>
   </body>
 </html>

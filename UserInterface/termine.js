@@ -1,3 +1,5 @@
+// jquery code by https://www.sliderrevolution.com/resources/html-calendar/
+
 var app = {
     settings: {
       container: $('.calendar'),

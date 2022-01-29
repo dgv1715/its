@@ -11,12 +11,18 @@ body {
   font-weight: lighter;
   text-align: center;
 }
-.container {
+.front h1 {
+  color: rgb(97, 218, 251);
+  font-size: 5em;
+  font-weight: lighter;
+  text-align: center;
+}
+.front {
   max-width: 600px;
   margin: 0 auto;
   padding: 25px;
 }
-.container > p {
+.front > p {
   color: #fff;
 }
 .welcome-back {

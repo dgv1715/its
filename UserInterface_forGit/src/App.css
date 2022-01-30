@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0
+}
+
+ .home, .kreativesundsport, .bibliothek, .faecher, .naturwissenschaften, .sprachen, .termine {
+  display: flex; 
+  height: 90vh;
+  align-items: center;
+  justify-content: center; 
+  font-size: 3rem
+}  /**/
+
+.home {
+  background-image: url('./images/home.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+ 
+}
+
+.termine {
+  background-image: url('./images/termine.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+.faecher {
+  background-image: url('./images/fächer.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+
+.naturwissenschaften {
+  background-image: url('./images/naturwissenschaften.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+
+.sprachen {
+  background-image: url('./images/sprachen.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+
+.kreativesundsport {
+  background-image: url('./images/kreatives.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+
+.bibliothek {
+  background-image: url('./images/bibliothek.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  
+}
+
+
+.page-description{
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  position: center
+}
+
+.normal-text{
+  color: red;
+  position: center
+  
+}
+
+
+.overlay {
+  display: flex; 
+  height: 90vh;
+  align-items: center;
+  justify-content: center; 
+  font-size: 3rem
+}  /**/
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  padding: 10px;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.item1 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+.item2 {
+  grid-column: 1 / span 4 ;
+  grid-row: 3;
+  font-size: 30px;
+}
+
+
+
+
+.hervorheben{
+  color:#343d46;
+}
+
+.nobull {
+  list-style-type: none;
+ }
+
+ .inserted-links{
+   color:black
+ }
+ .inserted-links:hover {
+  background-color: #c0c5ce;
+  color:black;
+  border-radius: 1px;
+  transition: all 0.2s ease-out;
+}
+
